@@ -39,7 +39,7 @@ pipeline {
         success{
             slackSend channel:"${SLACK_CHANNEL}",
                     color: 'good',
-                    message: "*Build Successful - ${env.JOB_NAME}* (<${env.BUILD_URL}|Open>)\nVersion - ${env.VERSION}\nTest - (<https://jenkins.test-cloud.appdetex.com/view/Deploy/job/deploy-fargate-test/parambuild/?APP=${env.APP}&VERSION=${env.VERSION}&BUILD_JOB_NUMBER=${BUILD_NUMBER}| Deploy>)"
+                    message: "*Build Successful - ${env.JOB_NAME}* (<${env.BUILD_URL}|Open>)\nVersion - ${env.VERSION}"
 
         }
         failure{
