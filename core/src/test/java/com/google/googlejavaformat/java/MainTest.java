@@ -128,8 +128,7 @@ public class MainTest {
       " *",
       " * graph",
       " *",
-      " * @param foo lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
-          + " eiusmod tempor incididunt ut labore et dolore magna aliqua",
+      " * @param foo lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna aliqua",
       " */",
       "class Test {",
       "  /**",
@@ -144,9 +143,8 @@ public class MainTest {
       " *",
       " * <p>graph",
       " *",
-      " * @param foo lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
-          + " eiusmod tempor",
-      " *     incididunt ut labore et dolore magna aliqua",
+      " * @param foo lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua labore et dolore magna",
+      " *     aliqua",
       " */",
       "class Test {",
       "  /** creates entropy */",

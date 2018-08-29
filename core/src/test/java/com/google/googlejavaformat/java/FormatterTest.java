@@ -46,7 +46,7 @@ public final class FormatterTest {
     // don't forget to misspell "long", or you will be mystified for a while
     String input =
         "class A{void b(){while(true){weCanBeCertainThatThisWillEndUpGettingWrapped("
-            + "because, it, is, just, so, very, very, very, very, looong);}}}";
+            + "because, it, is, just, so, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, looong);}}}";
     String expectedOutput =
         Joiner.on("\n")
             .join(
@@ -54,7 +54,8 @@ public final class FormatterTest {
                 "    void b() {",
                 "        while (true) {",
                 "            weCanBeCertainThatThisWillEndUpGettingWrapped(",
-                "                    because, it, is, just, so, very, very, very, very, looong);",
+                "                    because, it, is, just, so, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very,",
+                "                    looong);",
                 "        }",
                 "    }",
                 "}",
@@ -351,6 +352,7 @@ public final class FormatterTest {
                 .formatSource(
                     "class T {\n"
                         + "  public static void main(String[] args) { // one long incredibly"
+                        + " super duper duper duper duper duper duper duper duper duper duper"
                         + " unbroken sentence moving from topic to topic so that no-one had a"
                         + " chance to interrupt;\n"
                         + "  }\n"
@@ -359,9 +361,8 @@ public final class FormatterTest {
             "class T {\n"
                 + "  public static void main(\n"
                 + "      String[]\n"
-                + "          args) { // one long incredibly unbroken sentence moving"
-                + " from topic to topic so that no-one\n"
-                + "                  // had a chance to interrupt;\n"
+                + "          args) { // one long incredibly super duper duper duper duper duper duper duper duper duper duper unbroken sentence moving from topic to topic so that\n"
+                + "                  // no-one had a chance to interrupt;\n"
                 + "  }\n"
                 + "}\n");
   }
@@ -373,6 +374,7 @@ public final class FormatterTest {
                 .formatSource(
                     "class T {\n"
                         + "  public static void main(String[] args) { // one_long_incredibly"
+                        + "_super_duper_duper_duper_duper_duper_duper_duper_duper_duper_duper"
                         + "_unbroken_sentence_moving_from_topic_to_topic_so_that_no-one_had_a"
                         + "_chance_to_interrupt;\n"
                         + "  }\n"
@@ -382,6 +384,7 @@ public final class FormatterTest {
                 + "  public static void main(\n"
                 + "      String[]\n"
                 + "          args) { // one_long_incredibly"
+                + "_super_duper_duper_duper_duper_duper_duper_duper_duper_duper_duper"
                 + "_unbroken_sentence_moving_from_topic_to_topic_so_that_no-one_had_a"
                 + "_chance_to_interrupt;\n"
                 + "  }\n"
@@ -395,6 +398,7 @@ public final class FormatterTest {
                 .formatSource(
                     "class T {\n"
                         + "  public static void main(String[] args) { //one_long_incredibly"
+                        + "_super_duper_duper_duper_duper_duper_duper_duper_duper_duper_duper"
                         + "_unbroken_sentence_moving_from_topic_to_topic_so_that_no-one_had_a"
                         + "_chance_to_interrupt;\n"
                         + "  }\n"
@@ -403,7 +407,7 @@ public final class FormatterTest {
             "class T {\n"
                 + "  public static void main(\n"
                 + "      String[]\n"
-                + "          args) { // one_long_incredibly"
+                + "          args) { // one_long_incredibly_super_duper_duper_duper_duper_duper_duper_duper_duper_duper_duper"
                 + "_unbroken_sentence_moving_from_topic_to_topic_so_that_no-one_had_a"
                 + "_chance_to_interrupt;\n"
                 + "  }\n"
