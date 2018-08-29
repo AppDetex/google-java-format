@@ -77,9 +77,9 @@
   </developers>
 
   <scm>
-    <url>http://github.com/google/google-java-format/</url>
-    <connection>scm:git:git://github.com/google/google-java-format.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/google/google-java-format.git</developerConnection>
+    <url>http://github.com/AppDetex/google-java-format/</url>
+    <connection>scm:git:git://github.com/AppDetex/google-java-format.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/AppDetex/google-java-format.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
