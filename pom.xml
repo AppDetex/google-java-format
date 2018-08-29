@@ -285,4 +285,45 @@
     </profile>
   </profiles>
 
+  <distributionManagement>
+    <repository>
+      <id>archiva.releases</id>
+      <url>http://archiva.appdetex.com:8080/repository/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>archiva.snapshots</id>
+      <url>http://archiva.appdetex.com:8080/repository/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>archiva.releases</id>
+      <name>Releases Repository</name>
+      <url>http://archiva.appdetex.com:8080/repository/releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>archiva.snapshots</id>
+      <name>Snapshot Repository</name>
+      <url>http://archiva.appdetex.com:8080/repository/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>bintray-readytalk-maven</id>
+      <name>bintray</name>
+      <url>https://dl.bintray.com/readytalk/maven</url>
+    </repository>
+  </repositories>
+
 </project>
